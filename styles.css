@@ -4,20 +4,21 @@
     border: 0;
 }
 #nav-bar{
-height: 90px;
-color:black;
-background-color: aliceblue 55%;
-backdrop-filter: blur(5px);
-position:fixed;
-top: 0px;
-width: 100%;
-z-index:3;
+    height: 90px;
+    color:white;
+    background-color: rgba(0, 0, 0, 0.4);
+    backdrop-filter: blur(5px);
+    box-shadow: 0 0 15px gray;
+    position:fixed;
+    top: 0px;
+    width: 100%;
+    z-index:2;
 }
 #nav-bar .button{
     background-color: transparent;
-    border: black solid 3px;
+    border: white solid 3px;
     border-radius: 5px;
-    color: black;
+    color: white;
     padding: 10px 32px;
     text-align: center;
     text-decoration: none;
@@ -40,7 +41,7 @@ z-index:3;
     text-decoration: none;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: large;
-    color: black;
+    color: white;
     position: absolute;
     left:10%;
     top: 50%;
@@ -57,9 +58,9 @@ z-index:3;
     transform: translate(-50%, -50%);
 }
 #banner{
-height: 100vh;
-background-image:url('https://tesla-cdn.thron.com/delivery/public/image/tesla/a269d7b4-87a9-4057-9ac5-2565e56a188e/bvlatuR/std/4096x2560/Homepage-Model-3-Desktop-LHD?quality=auto-medium&amp;format=auto');
-box-shadow:  0 5px 9px rgb(139, 139, 139);
+    height: 100vh;
+    background-image:url('https://tesla-cdn.thron.com/delivery/public/image/tesla/a269d7b4-87a9-4057-9ac5-2565e56a188e/bvlatuR/std/4096x2560/Homepage-Model-3-Desktop-LHD?quality=auto-medium&amp;format=auto');
+    box-shadow:  0 5px 9px rgb(139, 139, 139);
 }
 #reception{
     margin: 0;
@@ -75,12 +76,20 @@ h1{
 }
 #reception input{
     margin:10px 0;
-    width: 370px;
+    padding: 2px 2px;
+    width: 500px;
     height:40px;
     box-shadow: 0 0 5px rgb(139, 139, 139);
 }
+.lupa{
+    margin-left:-35px;
+    margin-bottom: -12px;
+    height:30px;
+    width:auto;
+    opacity: 30%;
+}
 #content{
-height: 900px;
+    height: 900px;
 
 }
 
@@ -108,19 +117,19 @@ height: 900px;
 
 }
 .container-producto a{
- text-decoration: none;
- color:inherit;
- font-weight: bold;
- position: relative;
+    text-decoration: none;
+    color:inherit;
+    font-weight: bold;
+    position: relative;
 }
 .container-producto a:hover{
-color:rgb(127, 214, 255);
-text-shadow: 0 0 10px white,
-             0 0 20px white,
-             0 0 30px white,
-             0 0 90px rgb(127, 214, 255),
-             0 0 150px  rgb(127, 214, 255);
-animation: pulsate 2.5s infinite alternate;                
+    color:rgb(127, 214, 255);
+    text-shadow: 0 0 10px white,
+                 0 0 20px white,
+                 0 0 30px white,
+                 0 0 90px rgb(127, 214, 255),
+                 0 0 150px  rgb(127, 214, 255);
+    animation: pulsate 2.5s infinite alternate;                
 }
 @keyframes pulsate {
     100% {
@@ -148,13 +157,28 @@ animation: pulsate 2.5s infinite alternate;
         0 0 80px rgb(127, 214, 255);
     }
   }
-#footer{
-height:300px;
-background-color: black;
-}
-#content{
+  #content{
     display:flex;
     flex-direction:row;
     justify-content: space-evenly;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+  }
+#footer{
+    height:300px;
+    background-color: black;
+    color: white;
+}
+.list-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    position: relative;
+    top: 25%;
+    font-family:Verdana, Geneva, Tahoma, sans-serif
+}
+#footer li{
+    color: white;
+    list-style-type: none;
+    letter-spacing: 1px;
+    line-height: 25px;
 }
