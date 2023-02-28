@@ -1,0 +1,160 @@
+*{
+    padding:0;
+    margin:0;
+    border: 0;
+}
+#nav-bar{
+height: 90px;
+color:black;
+background-color: aliceblue 55%;
+backdrop-filter: blur(5px);
+position:fixed;
+top: 0px;
+width: 100%;
+z-index:3;
+}
+#nav-bar .button{
+    background-color: transparent;
+    border: black solid 3px;
+    border-radius: 5px;
+    color: black;
+    padding: 10px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 12px;
+    margin-left:15px;
+}
+#nav-bar .button:hover{
+    background-color: white;
+    color:black;
+}
+.button-container{
+    position: absolute;
+    right:0%;
+    top: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+#nav-bar a{
+    text-decoration: none;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: large;
+    color: black;
+    position: absolute;
+    left:10%;
+    top: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+#nav-bar img{
+    height:50px;
+    width: auto;
+    position: absolute;
+    left:5%;
+    top: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+#banner{
+height: 100vh;
+background-image:url('https://tesla-cdn.thron.com/delivery/public/image/tesla/a269d7b4-87a9-4057-9ac5-2565e56a188e/bvlatuR/std/4096x2560/Homepage-Model-3-Desktop-LHD?quality=auto-medium&amp;format=auto');
+box-shadow:  0 5px 9px rgb(139, 139, 139);
+}
+#reception{
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+h1{
+    text-align: center;
+    font-family: Verdana;
+}
+#reception input{
+    margin:10px 0;
+    width: 370px;
+    height:40px;
+    box-shadow: 0 0 5px rgb(139, 139, 139);
+}
+#content{
+height: 900px;
+
+}
+
+.container-producto{
+    background-color: transparent;
+    border: 2px solid rgb(206, 202, 202);
+    box-shadow: 0 0 15px rgb(110, 110, 110);
+    border-radius: 4px;
+    width: fit-content;
+    height: 350px;
+    position:relative;
+    top: 25%;
+    padding: 5% 5%;
+    line-height: 25px;
+}
+.container-producto:hover{
+    background-color: black;
+    color: white;
+}
+
+.container-producto img{
+    height:250px;
+    width:auto;
+    position:relative;
+
+}
+.container-producto a{
+ text-decoration: none;
+ color:inherit;
+ font-weight: bold;
+ position: relative;
+}
+.container-producto a:hover{
+color:rgb(127, 214, 255);
+text-shadow: 0 0 10px white,
+             0 0 20px white,
+             0 0 30px white,
+             0 0 90px rgb(127, 214, 255),
+             0 0 150px  rgb(127, 214, 255);
+animation: pulsate 2.5s infinite alternate;                
+}
+@keyframes pulsate {
+    100% {
+      /* Larger blur radius */
+      text-shadow:
+        0 0 4px #fff,
+        0 0 11px #fff,
+        0 0 19px #fff,
+        0 0 40px rgb(127, 214, 255),
+        0 0 80px rgb(127, 214, 255),
+        0 0 90px rgb(127, 214, 255),
+        0 0 100px rgb(127, 214, 255),
+        0 0 120px rgb(127, 214, 255);
+    }
+    0% {
+      /* Smaller blur radius */
+      text-shadow:
+        0 0 2px #fff,
+        0 0 4px #fff,
+        0 0 6px #fff,
+        0 0 10px rgb(127, 214, 255),
+        0 0 45px rgb(127, 214, 255),
+        0 0 55px rgb(127, 214, 255),
+        0 0 70px rgb(127, 214, 255),
+        0 0 80px rgb(127, 214, 255);
+    }
+  }
+#footer{
+height:300px;
+background-color: black;
+}
+#content{
+    display:flex;
+    flex-direction:row;
+    justify-content: space-evenly;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
