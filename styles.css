@@ -104,7 +104,10 @@ h1{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     margin: 100px 0px;
 }
-
+.main-container{
+    display: flex;
+    justify-content: space-evenly;
+}
 .container-producto{
     background-color: transparent;
     border: 2px solid var(--color3);
@@ -123,11 +126,10 @@ h1{
     transition: 0.2s ease-in-out;
 }
 
-.container-producto img{
+.img{
     height:10rem;
-    width:auto;
+    width:5rem;
     position:relative;
-
 }
 .container-producto a{
     text-decoration: none;
@@ -228,4 +230,8 @@ color:rgb(110, 110, 110)
     list-style-type: none;
     letter-spacing: 1px;
     line-height: 25px;
+}
+#changos{
+    font-size: larger;
+    color:red;
 }
